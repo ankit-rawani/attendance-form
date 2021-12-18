@@ -35,10 +35,7 @@ function App() {
 
   const handleSubmit = () => {
     setstate4(true);
-    fetch("https://docs.google.com/forms/d/e/1FAIpQLSdsnsGxI1SH3PKc2k3UhztsBV7SPgcLwyCs58aBckO7Rfr5bg/formResponse?usp=pp_url&entry.913388464=Ankit&entry.498039023=110119013&entry.1243725770=Nothing",{
-      method: 'POST',
-      body: {"entry.913388464": name, "entry.498039023": roll, "entry.1243725770": feedback}
-    })
+    fetch("https://docs.google.com/forms/d/e/1FAIpQLSdsnsGxI1SH3PKc2k3UhztsBV7SPgcLwyCs58aBckO7Rfr5bg/formResponse?entry.913388464="+name+"&entry.498039023="+roll+"&entry.1243725770="+feedback)
   }
 
   return (
